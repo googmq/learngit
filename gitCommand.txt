@@ -1,0 +1,61 @@
+git init
+创建版本库
+
+git add file
+添加文件到暂存区
+
+git commit -m "lable"
+把缓冲区的文件添加到仓库
+
+git status
+查看库状态
+
+git diff
+查看不同的地方
+
+git log
+查看从近至远的提交日志  看得眼花缭乱可以加上 --pretty=oneline 参数
+
+git reset --hard HEAD^
+回退到上一个版本   后面有几个^  就是回退到 上几个版本
+
+git reset --hard commit id
+回退到commit id 这个版本
+
+cat file
+看文件内容
+
+git reflog
+查看历史命令
+
+git diff HEAD -- file
+查看工作区和版本库里面最新版本的区别
+
+git checkout -- file
+丢弃工作区的修改,  不小心把源文件删除 可用上面代码复原版本库中文件
+
+git reset HEAD file
+把暂存区的修改撤销掉（unstage）
+
+git rm
+删除一个文件
+
+
+
+ssh-keygen -t rsa -C "youremail@example.com"
+创建SSH Key
+
+git remote add origin git@github.com:googmq/filename.git
+关联git远程库
+
+git push -u origin master
+把本地库的内容推送到远
+
+git push origin master
+
+
+
+git clone git@github.com:googmq/gitskills.git
+克隆一个本地库
+
+待续....
